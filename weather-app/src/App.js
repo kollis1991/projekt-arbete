@@ -2,7 +2,7 @@ import React from 'react';
 import Titles from './components/Titles';
 import Form from './components/Form';
 import Weather from './components/Weather.js';
-
+//API_key
 const API_KEY = "2fadbd8c73cf3c3bbdd36092bd018e3a"
 
 class App extends React.Component {
@@ -15,7 +15,7 @@ class App extends React.Component {
         error: undefined
 
     }
-
+//get.weather funktionen plus api nyckeln.
 getWeather = async (e) => {
     e.preventDefault();
   const city = e.target.elements.city.value;
@@ -32,7 +32,7 @@ getWeather = async (e) => {
     description: data.weather[0].description,
     error: ""
 
-
+//error funktionen
 
     });
     }else {
@@ -42,7 +42,7 @@ getWeather = async (e) => {
             country: undefined,
             humidity: undefined,
             description: undefined,
-            error: "Please enter the values"
+            error: "Snälla skriv in alla värden"
         
         
         
@@ -50,7 +50,7 @@ getWeather = async (e) => {
     }
 }
 
-
+//olika classnames för divar, Renderar ut alla mina olika delar i min app.
     render(){
         return(
             <div>

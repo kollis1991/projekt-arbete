@@ -1,3 +1,6 @@
+//Renderar ut alla mina olika väder-tjänster
+
+
 import React from 'react';
 
 class Weather extends React.Component {
